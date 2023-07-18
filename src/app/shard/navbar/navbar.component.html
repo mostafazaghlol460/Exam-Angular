@@ -1,0 +1,93 @@
+<!-- 
+<mat-toolbar color="primary" class="navbar navbar-default py-2 pt-3" dir="rtl">
+    <div class="container"> 
+   
+      <div class="navbar-header">
+        <a class="navbar-brand"  routerLinkActive="active" routerLink="welcome"><img src="../../../assets/images/images (3).png" alt=""> Final </a>
+      </div>
+  
+      
+      <div class="d-flex align-items-center">
+        <ul class="nav navbar-right d-flex align-items-center">
+          <li *ngIf="user?.role == 'doctor'" routerLinkActive="active">
+            <a routerLink="/new-exam">New Exam</a>
+          </li>
+          <li *ngIf="user?.role == 'doctor'" routerLinkActive="active"><a routerLink="/students">Students</a></li>
+          <li *ngIf="user !== null" routerLinkActive="active"><a routerLink="/subjects">Subjects </a></li>
+          <li  routerLinkActive="active"><a routerLink="/About">About </a></li>
+          <li  routerLinkActive="active"><a routerLink="/Contact">contact </a></li>
+          <li *ngIf="user !== null" routerLinkActive="active" (click)="logout()"><a  routerLink="/login">Log Out</a></li>
+          <li *ngIf="user == null" routerLinkActive="active"><a routerLink="/login">Sign in</a></li>
+          <li *ngIf="user == null" routerLinkActive="active"><a routerLink="/register">Sign Up</a></li>
+          <li *ngIf="user !== null" class="username"><i class="fa-solid fa-user"></i>{{user?.username}}</li>
+        </ul>
+  
+      </div>
+    </div>
+  </mat-toolbar>
+   -->
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light mask-custom shadow-0  ">
+    <div class="container">
+      <a class="navbar-brand pe-5" href="#!"><img src="assets/images/logo2.png" width="80px" h-100 routerLink="/"
+          [routerLinkActive]=" 'text-dark borbot' " [routerLinkActiveOptions]="{ exact:true}"
+          (click)="isMenuCollapsed = true"></a>
+      <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item " *ngIf="user?.role == 'doctor'" routerLinkActive="active">
+            <a class="nav-link" routerLink="/new-exam" [routerLinkActive]=" ' bord' "
+              [routerLinkActiveOptions]="{ exact:true}" (click)="isMenuCollapsed = true">New Exam</a>
+          </li>
+          <li class="nav-item " *ngIf="user !== null" routerLinkActive="active">
+            <a class="nav-link" routerLink="/subjects" [routerLinkActive]=" ' bord' "
+              [routerLinkActiveOptions]="{ exact:true}" (click)="isMenuCollapsed = true">Subject</a>
+          </li>
+          <li class="nav-item" *ngIf="user?.role == 'doctor'">
+            <a class="nav-link" routerLink="/students" [routerLinkActive]=" ' bord' "
+              [routerLinkActiveOptions]="{ exact:true}" (click)="isMenuCollapsed = true">Students</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link me-4" routerLink="/About" [routerLinkActive]=" ' bord' "
+              [routerLinkActiveOptions]="{ exact:true}" (click)="isMenuCollapsed = true">About </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link " routerLink="/Contact" [routerLinkActive]=" 'bord' "
+              [routerLinkActiveOptions]="{ exact:true}" (click)="isMenuCollapsed = true">Contact </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ul2 lead d-flex flex-row" routerLinkActive="active">
+          <li class="nav-item me-3 me-lg-0" routerLinkActive="active" *ngIf="user == null">
+            <a class="nav-link" routerLink="/register"> <i class="fa-solid fa-user-plus"></i>
+              Register
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0" routerLinkActive="active" *ngIf="user == null">
+            <a class="nav-link" routerLink="/login"> <i class="fa-solid fa-right-to-bracket"></i>
+              Log in
+            </a>
+          </li>
+
+          <li *ngIf="user !== null" class="nav-item me-3 me-lg-0" routerLinkActive="active" (click)="logout() ">
+            <a class="nav-link" routerLink="/login">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+              </svg> Log out            </a>
+          </li>
+          <li *ngIf="user !== null" class="username nav-item me-3 me-lg-0">
+            <a class="nav-link" routerLink="/login">
+              <i class="fa-solid fa-user"></i> {{user?.username}} </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Section: Design Block-->
+
+  <!--Section: Design Block-->
+</header>

@@ -1,0 +1,97 @@
+.container-fluid{
+    height: max-content;
+    padding: 10%;
+}
+.contactUs{ background-color: #f5f5f5; 
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ; 
+    -o-border-radius: 10px ;
+}
+img{
+    padding: 5%;
+    margin-top: 20%;
+}
+.shake:hover {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes shake {
+    from, to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%, 30%, 50%, 70%, 90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%, 40%, 60%, 80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+  @keyframes shake {
+    from, to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%, 30%, 50%, 70%, 90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%, 40%, 60%, 80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+
+  .btn-msg{
+    background-color: #1c375b;
+    color: #f5f5f5;
+  }
+
+  input{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/user-32/1200/user_circle_checkmark_-256.png);
+    background-size: 6%;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+
+
+    padding: 10px 5px 10px 20px;
+    text-indent: 20px;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 2s;
+    transition: all 0.2s;
+
+}
+
+.email{
+  background-image: url(https://cdn2.iconfinder.com/data/icons/free-design-24x24-px/24/communication_phone___massage_list-256.png);
+
+}
+textarea{
+  
+  border-radius: 30px;
+  text-indent: 20px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 2s;
+  transition: all 0.2s;
+  background-position: 1px  center;
+
+}

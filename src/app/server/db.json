@@ -1,0 +1,208 @@
+{
+  "register": [
+    {
+      "username": "aya",
+      "email": "aya@gamil.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "math",
+          "id": "1",
+          "degree": 3
+        },
+        {
+          "name": "OS Exam",
+          "id": "2",
+          "degree": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "username": "mahmoud",
+      "email": "mahmoud@gamil.com",
+      "password": "1234",
+      "subjects": [
+        {
+          "name": "math",
+          "id": "1",
+          "degree": 2
+        },
+        {
+          "name": "NW",
+          "id": "3",
+          "degree": 1
+        },
+        {
+          "name": ";oerjg",
+          "id": "5",
+          "degree": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "username": "mostafa",
+      "email": "mostafa@gamil.com",
+      "password": "4567",
+      "confirmPassword": "4567",
+      "id": 3
+    },
+    {
+      "username": "ahmed",
+      "email": "ahmed@gamil.com",
+      "password": "678",
+      "confirmPassword": "678",
+      "id": 4
+    },
+    {
+      "username": "ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 5
+    },
+    {
+      "username": "omar",
+      "email": "ahmed@gmail.com",
+      "password": "234",
+      "confirmPassword": "234",
+      "id": 6
+    },
+    {
+      "username": "ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 7
+    },
+    {
+      "username": "ali",
+      "email": "ali@gmail.com",
+      "password": "789",
+      "confirmPassword": "789",
+      "id": 8
+    },
+    {
+      "username": "aya",
+      "email": "mona@gamil.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 9
+    },
+    {
+      "username": "mahmoud",
+      "email": "mahmou@gamil.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 10
+    },
+    {
+      "username": "omar",
+      "email": "omar@gamil.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 11
+    },
+    {
+      "username": "mona",
+      "email": "mona@gmail.com",
+      "password": "345",
+      "confirmPassword": "345",
+      "id": 12
+    }
+  ],
+  "doctor": [
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 1
+    }
+  ],
+  "login": [
+    {
+      "username": "admin",
+      "role": "doctor",
+      "userId": 1,
+      "id": 1
+    }
+  ],
+  "subjects": [
+    {
+      "name": "math",
+      "questions": [
+        {
+          "question": "3*4",
+          "answer1": "12",
+          "answer2": "6",
+          "answer3": "65",
+          "answer4": "83",
+          "correctAnswer": "12"
+        },
+        {
+          "question": "3*4",
+          "answer1": "12",
+          "answer2": "6",
+          "answer3": "65",
+          "answer4": "83",
+          "correctAnswer": "12"
+        },
+        {
+          "question": "3*4",
+          "answer1": "12",
+          "answer2": "6",
+          "answer3": "65",
+          "answer4": "83",
+          "correctAnswer": "12"
+        },
+        {
+          "question": "3*4",
+          "answer1": "12",
+          "answer2": "6",
+          "answer3": "65",
+          "answer4": "83",
+          "correctAnswer": "12"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "OS Exam",
+      "questions": [
+        {
+          "question": "What is an operating system?",
+          "answer1": "interface between the hardware and application programs",
+          "answer2": "collection of programs that manages hardware resources",
+          "answer3": "system service provider to the application programs",
+          "answer4": "all of the mentioned",
+          "correctAnswer": "all of the mentioned"
+        },
+        {
+          "question": "Which one of the following is not a real time operating system?",
+          "answer1": " RTLinux",
+          "answer2": "Palm OS",
+          "answer3": "VxWorks",
+          "answer4": "QNX",
+          "correctAnswer": "Palm OS"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "NW",
+      "questions": [
+        {
+          "question": "jdksfs",
+          "answer1": "lf;ds",
+          "answer2": "lewfj",
+          "answer3": "kd",
+          "answer4": "jkdh",
+          "correctAnswer": "lf;ds"
+        }
+      ],
+      "id": 3
+    }
+  ]
+}
